@@ -1,0 +1,77 @@
+
+/**
+* :: STICKY FOOTER BEGINS
+*/
+body.azad section:nth-last-child(2){
+    margin-bottom: 570px;
+}
+/**
+* :: FOOTER DESIGN
+*/
+.footer-1{
+    background:deepskyblue;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    .footer_top{
+        color: #151414;
+        padding: 100px 0px 50px;
+        background: #ffffff;
+    }
+    .footer_widgets{
+        display: flex;
+        align-items: center;
+    }
+    .footer_widgets h3{
+        font-size: 20px;
+        _color: rgba(255,255,255,.7);
+        color: deepskyblue;
+    }
+    .footer_widget_1{
+        width: calc(100% / 3);
+        text-align:left;    
+    }
+    .footer_widget_1 ul{   
+        margin-top: 20px; 
+    }
+    .footer_widget_1 ul li a{
+        _color: rgba(255,255,255,.5);    
+        color: deepskyblue;    
+    }
+    .footer_widget_1 ul li a:hover{
+        color:white;    
+    }
+    .footer_middle{
+        padding: 70px 0px;
+    }
+    .footer_middle a{
+        color: #026261;
+        text-decoration: none;
+    }
+    .footer_copyright {
+        background:rgba(0,0,0,0.05);
+        font-size: 1em;
+        padding: 30px 0px;
+    }
+    .footer_copyright ul li{
+        display: inline;
+    }
+    .footer_copyright ul li{
+        border:1px solid #222;
+        border-radius: 50%;
+        color:#222;
+        padding: 13px;
+        font-size: 20px;
+        line-height: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    .footer_copyright ul li a:hover i{
+        color:#ffffff;
+        background: tomato;
+        border: 1px solid tomato;
+    }
+}

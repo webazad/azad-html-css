@@ -1,0 +1,64 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+}
+
+.header-sticky {
+  background: tomato;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.4);
+  padding: 10px 0;
+  opacity: 0;
+}
+.header-sticky .site-brand {
+  float: left;
+}
+.header-sticky nav {
+  float: right;
+}
+.header-sticky nav li {
+  float: left;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.site-brand {
+  color: #fff;
+}
+
+.opening {
+  background: DarkTurquoise;
+  height: 400px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: block;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}

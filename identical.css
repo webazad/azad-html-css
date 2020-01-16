@@ -1,0 +1,251 @@
+/**
+*------------------------------------------------------------------------------------------
+*	= PROJECT NAME: A LANDING PAGE
+*	= PROJECT DESCRIPTION: A BUSINESS LANDING PAGE
+*	= FILE NAME: CUSTOM.CSS
+*	= AUTHOR: MD. ABUL KALAM AZAD
+*	= AUTHOR URI: http://www.theinfotechs.com
+*	= DEVELOPER: MD. ABUL KALAM AZAD
+*	= DEVELOPER URI: http://www.theinfotechs.com
+*	= VERSION: 0.0.1
+*	= DEVELOPMENT DATE: 21/12/16
+* 	= COUNTRY: BANGLADESH
+*------------------------------------------------------------------------------------------
+*/
+@media screen {}
+@media print {}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: FONTS DECLARATIONS
+*------------------------------------------------------------------------------------------
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@font-face {
+    font-family: 'Bitter' ;
+    src: url('../fonts/Bitter-Regular-webfont.eot');
+    src: url('../fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bitter-Regular-webfont.woff') format('woff'),
+         url('../fonts/Bitter-Regular-webfont.ttf') format('truetype'),
+         url('../_fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: FIRST WAY TO RESET CODE
+*------------------------------------------------------------------------------------------
+*/
+* { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font: inherit;
+	background: transparent;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: SECOND WAY TO RESET CODE
+*------------------------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, pre, a, abbr, acronym, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, lagend, table, caption, tbody, thead, tfoot, th, tr, td, section, article, aside, header, hgroup, nav, menu, footer, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, mark, span, em, strong, img, ol, ul, li, figure, figcaption, details, embed, canvas, audio, video, output, ruby summary input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font: inherit;
+	background: transparent;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: HTML5 DISPLAY RULE
+*------------------------------------------------------------------------------------------
+*/
+address, article, aside, canvas, details, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, main {
+  display: block;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: GLOBAL STYLE
+*------------------------------------------------------------------------------------------
+*/
+html { background: rgba(65,64,66,.8); }
+body { 
+	font: 14px/21px "Cabin", Helvetica, Arial, sans-serif; 
+	color: #6c6c6c; 
+	text-align: center; 
+	-webkit-font-smoothing: antialiased; /* Chrome Suffery     */
+	-moz-font-smoothing: antialiased; 	 /* Firefox            */
+	-ms-font-smoothing: antialiased; 	 /* Internet Explorer  */
+	-o-font-smoothing: antialiased; 	 /* Opera              */
+	font-smoothing: antialiased; 		 /* Official           */
+}
+h1 { font: 36px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h2, h3 { font: 21px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h4 { font: 16px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h5 { font: 14px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h6 { font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+a:link { color: #e74b34; text-decoration: none; }
+a:hover, a:focus, a:active, a:visited { color: #132c3b; text-decoration: underline; }
+p { margin-bottom: 1em; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+ol, ul { list-style: none;}
+blockquote { border: 0; font: italic 21px/1.5em "Gentium Basic", Georgia, serif; color: #2894d8; }
+blockquote cite { display: block; margin-top: 42px; font-size: 16px; font-style: normal; }
+hr { border: none; height: 1px; background-color: #ededed; margin: 3em 0; }
+input { background: #696969; border: 1px solid #c3c3c3; color: #cbcbcb; padding: 3px; }
+input:focus, input:hover { background: #ededed; color: #4e4e4e; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: SOLUTION TO THE CLEARFIX PROBLEM
+*------------------------------------------------------------------------------------------
+*/
+.clearfix:before,
+.clearfix:after { 
+	content: "";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	height: 0;
+	line-height: 0;
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+/* FOR IE 6/7 (TRIGGER HAS LAYOUT) */
+.clearfix {
+	zoom: 1;
+	display: inline-block;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: THE WAY HOW TO HIDE TEXT
+*------------------------------------------------------------------------------------------
+*/
+h1.logo a {
+	width: 200px;
+	height: 71px;
+	display: block;
+	background: url("tea-logo.png") no-repeat 0 0;
+		
+	// First way to hide text fron the visitors eye sight
+	_text-indent: -9999%; 
+	
+	// Second way to hide text fron the visitors eye sight
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	background-color: transparent;
+}
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: BIG WRAPPER CODE
+*------------------------------------------------------------------------------------------
+*/
+#bigWrapper { overflow: hidden; margin: 0 auto; position: relative; text-align: left; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: HEADER CODE
+*------------------------------------------------------------------------------------------
+*/
+header { background: red; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: NAVIGATION CODE
+*------------------------------------------------------------------------------------------
+*/
+nav ul { background: green; }
+nav ul li { background: green; }
+nav ul li a { display: block; width: 30px; heidth: 30px; margin-left: 30px; }
+nav ul li:last-child a { background: green; margin-left: none; }
+nav ul li a:hover { background: yellow; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: SECTION CODE
+*------------------------------------------------------------------------------------------
+*/
+section { width: 30em; float: left; background: tomato; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: ARTICLE CODE
+*------------------------------------------------------------------------------------------
+*/
+article { background: yellow; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: SIDEBAR CODE IF ANY...
+*------------------------------------------------------------------------------------------
+*/
+aside { width: 20em; float: right; background: navy; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	:: FOOTER CODE
+*------------------------------------------------------------------------------------------
+*/
+footer { clear: both; background: black; color: white; }
+
+/**
+*------------------------------------------------------------------------------------------
+*	= NOTES TO THE DEVELOPER
+*	= TO STOP THE PROPERTY WORK UNDERSCORE SIGN IS USED (_) IN FRONT OF THE PROPERTY
+*	= A DEVELOPER SHOULD LEARN ALL THE PSEUDO CLASSES FOR THEIR EMERGRNCY USE
+*	= DEAR CLIENT YOU CAN CHANGE ANY OF THE PEOPERTY ABOVE JUST MANUALY
+*	= 16px = 1em
+*------------------------------------------------------------------------------------------
+*/
+
+/**
+*----------------------------------------------------------------------------------
+* :: DIFFERENT TYPES TYPES OF COMMENTS STYLES ARE GIVEN HERE
+*----------------------------------------------------------------------------------
+*/
+/*comments style 01 */
+
+/*
+	Multiline comments /comments style 02
+*/
+
+/*********************************************************************************
+*	= comment style 03
+**********************************************************************************/
+
+/*======================================
+* :: comment style 04
+*=======================================*/
+
+/*
+-----------------------------------------
+* = comments style 05
+-----------------------------------------
+*/
+
+/*#########################################*/
+/* = comment style 06                  */
+/*########################################*/

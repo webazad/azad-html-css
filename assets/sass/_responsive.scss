@@ -1,0 +1,148 @@
+@media only screen and (max-width: 767px) {
+    .mobile-menu{
+        display: block !important;
+        .burger{
+            position:fixed;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background: #ffffff;
+            border:3px solid $link_color;
+            border-radius: 4px;
+            padding: 5px;
+            span{
+                width:100%;
+                border-radius: 4px;
+                position:relative;
+                height: 3px;
+                background: $link_color;
+            }
+            span::before,span::after{
+                content:'';
+                border-radius: 4px;
+                height:3px;
+                width:100%;
+                position:absolute;
+                background: $link_color;
+            }
+            span::before{
+                top: -7px;
+            }
+            span::after{
+                top: 7px;
+            }
+        }
+        .mobile_menu{
+            background: #ffffff;
+            position:fixed;
+            top: 0;
+            right: 0;
+            content:'';
+            width: 90%;
+            height: 100%;
+            transform: skewX(0deg) translate(100%, 0);
+            transform-origin: top right;
+            transition: all .2s ease-in;
+            z-index: 99;
+            
+            h2{
+                transform: skewX(-8deg);
+                margin: 15px;
+                padding: 20px;
+                padding-right: 27%;
+                font-size: 50px;
+                color: $link_color;
+                text-align: right;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            nav{
+                display:flex;
+                align-items:top;
+                justify-content:center;
+                height: 85%;
+                ul {
+                    list-style: none;
+                    font-family: impact;
+                    transform: skewX(-8deg);
+                    width: 100%;
+                    text-align: right;
+                    li{
+                        padding: 0 20% 0 0;
+                        margin:auto;
+                        text-align: right;                    
+                        opacity: 0;
+                        transform: translate(0, 10px);
+                        transition: all .0s ease-in .3s;
+                        a{
+                            text-decoration: none;
+                            color: $link_color;
+                            font-weight: bold;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                            line-height: 40px;
+                        }                  
+                    }
+                }
+            }
+            .social-sidebar{
+                transform: skewX(-8deg);
+                bottom: 0;
+                position: fixed;
+                height: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                width: 100%;
+            }
+        }
+        .mobile_menu.active{
+            transform: skewX(8deg) translate(0, 0);            
+            nav{
+                ul{
+                    li{
+                        opacity: 1;
+                        transform: translate(0,0);
+                        transition: all .2s ease-in 0s;                                        
+                    }
+                    li:nth-child(1) {
+                        transition-delay: .3s;
+                    }
+                    li:nth-child(2) {
+                        transition-delay: .4s;
+                    }
+                    li:nth-child(3) {
+                        transition-delay: .5s;
+                    }
+                    li:nth-child(4) {
+                        transition-delay: .6s;
+                    }
+                    li:nth-child(5) {
+                        transition-delay: .7s;
+                    }
+                    li:nth-child(6) {
+                        transition-delay: .8s;
+                    }             
+                }
+            }            
+        }
+    }
+    .azad-container{
+        width: 98vw;
+        margin: 0 auto;
+        display-flex:column;
+    }
+    .the-header{
+        display: none;
+    }
+    .azad-2{
+        text-align: center;
+        img{
+            width: 100vw;
+        }
+    }
+}

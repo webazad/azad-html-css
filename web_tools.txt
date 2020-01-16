@@ -1,0 +1,17 @@
+Code Editors:
+
+1.	Notepad
+2.	Notepad++
+3. 	Dream weaver
+4.	Netbeans
+5.	sublime text
+6.	Context
+7.	Atom
+8.	Bare Bones
+9.	Bracket
+10.	php storm
+11.	
+2. Google chroame, firefox, opera, safari, windows explorer
+3. pixie, measureit, page ruler
+4. chrome developer tool, firebug
+5. ftp

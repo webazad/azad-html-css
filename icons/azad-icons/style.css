@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'azad-fonts';
+  src:  url('fonts/azad-fonts.eot?c1l47p');
+  src:  url('fonts/azad-fonts.eot?c1l47p#iefix') format('embedded-opentype'),
+    url('fonts/azad-fonts.ttf?c1l47p') format('truetype'),
+    url('fonts/azad-fonts.woff?c1l47p') format('woff'),
+    url('fonts/azad-fonts.svg?c1l47p#azad-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="af-"], [class*=" af-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'azad-fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.af-home:before {
+  content: "\e900";
+}
+.af-home2:before {
+  content: "\e901";
+}
+.af-home3:before {
+  content: "\e902";
+}

@@ -1,0 +1,56 @@
+/*
+* Responsivekit V1.0
+* Copyright 2012, Angelo Compagnucci
+* www.responsivekit.com
+* Forked from www.getskeleton.com by Dave Gamache
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 26/01/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* All Mobile Sizes smaller than Tablet portrait (devices and browsers) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	
+	/* Standard 960 to 1200 (devices and browsers)*/
+	@media only screen and (min-width: 960px) and (max-width: 1215px) {}
+
+	/* 1200 grid, more than 1216 px (devices and browsers)*/
+	@media only screen and (min-width: 1216px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

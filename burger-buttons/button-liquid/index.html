@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="">
+        <div class="dynamic-button">
+            <div class="toggle">
+                <span></span>
+            </div>
+        </div> 
+        <svg style="display:none;">
+            <defs>
+                <filter id="goo">
+                    <fegaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+                    <feColorMatrix in="blur" result="colormatrix" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -6" />
+                    <feBlend in="SourceGraphic" in2="colormatrix" />
+                </filter>
+            </defs>
+        </svg>               
+    </header>
+    <section></section>
+    <footer class="azad-footer"></footer>
+</body>
+</html>

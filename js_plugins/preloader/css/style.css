@@ -1,0 +1,572 @@
+/**
+*-------------------------------------------------------------------------------
+*   = PROJECT NAME: WEBDESIGN
+*   = PROJECT DESCRIPTION: A BUSINESS LANDING PAGE
+*   = FILE NAME: CUSTOM.CSS
+*   = AUTHOR: MD. ABUL KALAM AZAD
+*   = DEVELOPER: MD. ABUL KALAM AZAD
+*   = DEVELOPER URI: http://www.theinfotechs.com
+*   = AUTHOR URI: http://www.theinfotechs.com
+*   = VERSION: 0.0.1
+*   = DEVELOPMENT DATE: 19/01/18
+*   = COUNTRY: BANGLADESH
+*-------------------------------------------------------------------------------
+*/
+/**
+*-------------------------------------------------------------------------------
+*   :: THE WAY TO RESET CODE
+*-------------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, pre, a, abbr, acronym, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, hr, center, dl, dt, dd, fieldset, form, label, lagend, table, caption, thead, tbody, tfoot, th, tr, td, section, article, aside, header, hgroup, nav, menu, footer, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, mark, span, em, strong, img, ol, ul, li, figure, figcaption, details, embed, canvas, audio, video, output, ruby, summary, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -mz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/**
+*-------------------------------------------------------------------------------
+*   = HTML5 DISPLAY RULE
+*-------------------------------------------------------------------------------
+*/
+address, article, aside, canvas, details, figure, figure img, figcaption, footer, header, hgroup, menu, nav, section, summary, main, audio, video {
+  display: block;
+}
+/**
+*-------------------------------------------------------------------------------
+*   = GLOBAL STYLE
+*-------------------------------------------------------------------------------
+*/
+html { background: rgba(65,64,66,.8);}
+body { 
+    font: 14px/21px "Cabin", Helvetica, Arial, sans-serif; 
+    color: #6c6c6c; 
+    text-align: center; 
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; /* Chrome Suffery     */
+    -moz-font-smoothing: antialiased; 	 /* Firefox            */
+    -ms-font-smoothing: antialiased; 	 /* Internet Explorer  */
+    -o-font-smoothing: antialiased; 	 /* Opera              */
+    font-smoothing: antialiased; 		 /* Official           */
+}
+_h1 { font: 36px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h2, h3 { font: 21px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h4 { font: italic 16px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h5 { font: 14px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+h6 { font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+a:link { color: #e74b34; text-decoration: none; }
+a:hover, a:focus, a:active, a:visited { color: #132c3b; text-decoration: underline; }
+_p { margin-bottom: 1em; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+ol, ul { list-style: none;}
+table {border-collapse:collapse;border-spacing:0;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content:""; content:none;}
+blockquote { border: 0; font: italic 21px/1.5em "Gentium Basic", Georgia, serif; color: #2894d8; }
+blockquote cite { display: block; margin-top: 42px; font-size: 16px; font-style: normal; }
+hr { border: none; height: 1px; background-color: #ededed; margin: 3em 0; }
+input { background: #696969; border: 1px solid #c3c3c3; color: #cbcbcb; padding: 3px; }
+input:focus, input:hover { background: #ededed; color: #4e4e4e; }
+.box{
+    overflow: hidden;
+}
+.col{
+    float: left;
+}
+.col_2{
+    width: 50%;
+}
+.col_4{
+    width: 25%;
+}
+/**
+*-------------------------------------------------------------------------------
+*   = SOLUTION TO THE CLEARFIX PROBLEM
+*-------------------------------------------------------------------------------
+*/
+.clearfix:before,
+.clearfix:after { 
+    content: "";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    height: 0;
+    line-height: 0;
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* FOR IE 6/7 (TRIGGER HAS LAYOUT) */
+.clearfix {
+    zoom: 1;
+    display: inline-block;
+} 
+/**
+*-------------------------------------------------------------------------------
+*   :: BIG WRAPPER CODE
+*-------------------------------------------------------------------------------
+*/
+div.big_wrapper{
+    _background: red;
+}
+div.content_box{
+    width: 85%;
+    margin: 0 auto;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: PRELOADER STYLE
+*-------------------------------------------------------------------------------
+*/
+#ud_preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#ud_preloader .ud_pre_half{
+    background: #111111;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+}
+#ud_preloader #ud_bg_left{
+    left: 0;
+}
+#ud_preloader #ud_bg_right{
+    right: 0;
+}
+#ud_preloader #ud_dots{
+    z-index: 1001;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+#ud_preloader #ud_dots p{
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+}
+#ud_preloader #ud_dots .ud_dot{
+    animation: infinite 500ms ease-in-out;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    float: left;
+    margin: 0 10px 0 0;
+}
+#ud_preloader #ud_dots .ud_dot:last-child{
+    margin: 0 0 0 0;
+}
+@keyframes ud_preloader_1{
+    0%{background: #ffffff;transform:translateY(0);}
+    25%{background: #ff6600;transform:translateY(-5px);}
+    50%{background: #ffffff;transform:translateY(0);}
+}
+@keyframes ud_preloader_2{
+    25%{background: #ffffff;transform:translateY(0);}
+    50%{background: #ff6600;transform:translateY(-5px);}
+    75%{background: #ffffff;transform:translateY(0);}
+}
+@keyframes ud_preloader_3{
+    50%{background: #ffffff;transform:translateY(0);}
+    75%{background: #ff6600;transform:translateY(-5px);}
+    100%{background: #ffffff;transform:translateY(0);}
+}
+@keyframes ud_preloader_4{
+    75%{background: #ffffff;transform:translateY(0);}
+    100%{background: #ff6600;transform:translateY(-5px);}
+    25%{background: #ffffff;transform:translateY(0);}
+}
+/**
+*------------------------------------------------------------------------------------------
+* = THE WAY HOW TO HIDE TEXT
+*------------------------------------------------------------------------------------------
+*/
+h1.logo a {
+    _width: 200px;
+    _height: 71px;
+    _display: block;
+    /*
+    background: url("tea-logo.png") no-repeat 0 0;
+    
+    First way to hide text from the visitors eye sight
+    //_text-indent: -9999%; 
+
+    // Second way to hide text from the visitors eye sight
+    //border: 0;
+    //font: 0/0 a;
+    //text-shadow: none;
+    //color: transparent;
+    //background-color: transparent;
+    */
+}
+div.logo{
+    width: 10%;
+    float: left;
+    text-align: left;
+}
+div.logo h1{
+    padding: 0px;
+    margin: 0px;
+}
+div.logo img{
+    padding: 10px 0px;
+}
+/**
+*------------------------------------------------------------------------------------------
+* = NAVIGATION STYLE
+*------------------------------------------------------------------------------------------
+*/
+/*nav.navigation{
+    width: 90%;
+    float: right;
+    text-align: right;
+}
+nav.navigation ul{
+    overflow: hidden;
+    text-align: right;
+}
+nav.navigation ul li{
+    display: inline-block;
+}
+nav.navigation ul li a{
+    display: block;
+    color: #e3e3e3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 24px 10px;
+}
+.active{
+    color: white;
+    background: #c3c3c3;
+}
+nav.navigation ul li a:hover{
+    color: white;
+    background: #c3c3c3;
+}
+*/
+/**
+*-------------------------------------------------------------------------------
+* :: HEADER STYLE
+*-------------------------------------------------------------------------------
+*/
+_header.the_header{
+    overflow: hidden;
+    background: red;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+/**
+*------------------------------------------------------------------------------------------
+* = NAVIGATION STYLE
+*------------------------------------------------------------------------------------------
+*/
+button.the_button{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+div.button_wrap{
+    width: 30px;
+    margin-top:-10px;
+    display: inline-block;
+}
+span.button_line{
+    display: block;
+    position: relative;
+    height: 1px;
+    z-index: 2;
+    background: white;
+    margin-top: 10px;
+}
+_span.button_line:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    display: block;
+    background: black;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: BANNER STYLE
+*-------------------------------------------------------------------------------
+*/
+div.banner {
+    background: url("../images/banner.jpg") no-repeat center center;
+    height: 662px;
+    background-size: cover;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: SECTION TEXT STYLE
+*-------------------------------------------------------------------------------
+*/
+div.section_text{
+    background: yellow;
+    text-align: left;
+    padding: 80px 0px;
+    z-index: 1;
+}
+div.section_text h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+div.section_text p{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+}
+a.button{
+    color: #000000;
+    height: 60px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 40px 0px 0px;
+    display: inline-block;
+    border: 3px solid black;
+    position: relative;
+    box-sizing: border-box;
+}
+a.button:after{
+    content:'';
+    position: absolute;
+    top: -44px;
+    width: 0;
+    height: 60px;
+    right: -66px;
+    transition: all .3s;
+    background: red;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 40px 0px 0px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 3px solid black;
+}
+.button:hover a.button:after{
+    top: -4px;
+    right: -6px;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: STUDIO STYLE
+*-------------------------------------------------------------------------------
+*/
+div.studio {
+    background: url("../images/section2.jpg") no-repeat center center;
+    height: 600px;
+    background-size: cover;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: CONTACT FORM STYLE
+*-------------------------------------------------------------------------------
+*/
+div.contact{
+    background: #000000;
+    padding: 80px 0px;
+}
+div.contact h2{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+form{
+    width: 40%;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+form input{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+form input[type='submit']{
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 30px auto 10px;
+    color: #ffffff;
+    background: rgba(0,0,0,0.3);
+}
+form input[type='submit']:hover{
+    color: #ffffff;
+    background: #55acee;
+}
+form p:hover{
+    color: #ffffff;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: ANIMATED ARROW DESIGN
+*-------------------------------------------------------------------------------
+*/
+div.arrow{
+    font-size: 48px;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    padding-top: 580px;
+    padding-right: 30px;
+    text-align: right;
+    _transform:rotate(-90deg);
+    animation: bouncearrow 1.5s infinite;
+}
+@keyframes bouncearrow{
+    0%{top:0px;}
+    50%{top:20px; color:yellow;}
+    100%{top:0px;}
+}
+/**
+*-------------------------------------------------------------------------------
+* :: JAVASCRIPT SECTION DESIGN
+*-------------------------------------------------------------------------------
+*/
+div.javascript{
+    background: white;
+    color: red;
+    border-bottom: 1px solid black;
+    padding: 30px 0px;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: SECTION CHECK
+*-------------------------------------------------------------------------------
+*/
+section.check{
+    background: #ffffff;
+    margin-bottom: 385px;
+    padding: 70px 0px;
+}
+section.check h2{
+    font-size: 30px;
+    line-height: 35px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+section.check p{
+    color: #e3e3e3;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+/**
+*-------------------------------------------------------------------------------
+* :: FOOTER STYLE
+*-------------------------------------------------------------------------------
+*/
+footer.the_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+div.footer_top{
+    background-color: rgb(32,32,32);
+    padding: 60px 0px;
+}
+div.widget{
+    text-align: left;
+}
+div.widget p{
+    color: rgba(255,255,255,.6);
+    font-family: arial;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+}
+div.widget .widget_title{
+    color: rgba(255,255,255,.6);
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+div.widget_body ul{
+    list-style: none;
+    text-align: left;
+}
+div.widget_body ul li{
+    margin-bottom: 10px;
+}
+div.widget_body ul li a{
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+    font-weight: bold;
+}
+div.widget_body ul li a:hover{
+    color: rgba(255,255,255,1);
+}
+
+div.copyright{
+    background-color: rgb(44,44,44);
+    padding: 30px 0px;
+}
+div.copyright p{
+    color: rgb(129,129,129);
+    margin-bottom: 0;
+}
