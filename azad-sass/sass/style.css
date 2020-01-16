@@ -1,0 +1,212 @@
+/**
+*------------------------------------------------------------------------------------------
+*	:: SECOND WAY TO RESET CODE
+*------------------------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, pre, a, abbr, acronym, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, lagend, table, caption, tbody, thead, tfoot, th, tr, td, section, article, aside, header, hgroup, nav, menu, footer, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, mark, span, em, strong, img, ol, ul, li, figure, figcaption, details, embed, canvas, audio, video, output, ruby summary input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font: inherit;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+*------------------------------------------------------------
+*	:: HTML5 DISPLAY RULE
+*------------------------------------------------------------
+*/
+address, article, aside, canvas, details, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, main {
+  display: block;
+}
+
+a {
+  color: red;
+}
+
+body {
+  font-family: Tahoma;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/**
+* :: HEADER DESIGN
+*/
+.azad-header {
+  border-top: 2px solid tomato;
+  color: #000000;
+  background: #ffffff;
+  text-align: center;
+}
+
+.azad-header .header-left {
+  background: #4c4c4c;
+  color: #ffffff;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.azad-header .azad-menu {
+  padding: 2rem 0;
+}
+
+.azad-header .azad-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.azad-header .azad-menu ul li a {
+  display: block;
+  margin-left: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 4rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  background: #333333;
+}
+
+.azad-header .azad-menu ul li a:hover {
+  background: #e3e3e3;
+  background: #333333;
+}
+
+/**
+* :: MORE AFTER HEADER
+*/
+body.azad section:nth-child(2) {
+  _padding: 100px 0px 0px;
+}
+
+/**
+* :: FRONT PAGE
+*/
+.azad-1 {
+  background: #e3e3e3;
+  padding: 2rem 0;
+}
+
+.azad-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.azad-1 .container div {
+  width: 33%;
+  background: red;
+}
+
+.azad-2 {
+  background-image: url("../imgs/bg-town.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.azad-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.azad-2 .container div {
+  width: 33%;
+  text-align: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.azad-2 .container div h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.azad-2 .container div p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/**
+* :: STICKY FOOTER BEGINS
+*/
+/**
+* :: FOOTER DESIGN
+*/
+footer.azad-footer {
+  text-align: center;
+}
+
+footer.azad-footer .footer-top {
+  background: #4d4d4d;
+  padding: 5rem 0;
+  color: #ffffff;
+}
+
+footer.azad-footer .footer-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer.azad-footer .footer-top ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+footer.azad-footer .footer-bottom {
+  background: #333333;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-menu {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+/**
+* :: HEADER DESIGN
+*/
+.azad-header{
+    border-top:2px solid tomato;
+    color:#000000;
+    background:map_get($colors,bg);
+    text-align:center;
+    .header-left{
+        background:#4c4c4c;
+        color:#ffffff;
+        padding:1rem 0;
+        font-size:2rem;
+    }
+    .azad-menu{
+        padding:2rem 0;
+        ul{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            li{
+                a{
+                    display:block;
+                    margin-left: 1rem;
+                    border:1px solid rgba(0,0,0,.075);
+                    border-radius:4rem;
+                    font-size:1rem;
+                    padding:1rem 1rem;
+                    text-transform:uppercase;
+                    background:lighten(map-get($colors,"footer-bg"),20%);
+                    &:hover{
+                        background:#e3e3e3;
+                        background:lighten(map-get($colors,"footer-bg"),20%);
+                    }
+                }
+            }
+        }
+    }
+}
