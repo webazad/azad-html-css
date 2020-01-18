@@ -10,21 +10,28 @@
 </head>
 <body>
 	<div class="big-wrapper">
+		<!-- HEADER BEGINS -->
 		<header class="azad-header">
-			<div class="header-left">Azad</div>
-			<div class="header-right">
-				<nav class="azad-menu">
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Services</a></li>
-						<li><a href="">Info</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</nav>
+			<div class="azad-container">
+				<div class="header-container">
+					<div class="logo">
+						<h1><a href="#"><img src="imgs/logo-header.png"></a></h1>
+					</div>
+					<div class="azad-nav">
+						<nav class="azad-menus">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Info</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
-		</header>
+		</header><!-- ends header -->
 		<section class="azad azad-1">
 			<div>
 				<div class="container">
@@ -66,5 +73,27 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		var navButton = document.querySelector('.burger-button');
+		var navMenu = document.querySelector('.mobile-menus');
+		var win = window;
+		
+		function openMenu(event) {
+			navButton.classList.toggle('active');
+			navMenu.classList.toggle('active');
+			
+			event.preventDefault();
+			event.stopImmediatePropagation();
+		}
+		
+		function closeMenu(event) {
+			if (navButton.classList.contains('active')) {
+				navButton.classList.remove('active');
+				navMenu.classList.remove('active');
+			}
+		}
+		navButton.addEventListener('click', openMenu, false);
+		win.addEventListener('click',closeMenu, false);
+	</script>
 </body>
 </html>
