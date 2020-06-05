@@ -1,5 +1,5 @@
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	= PROJECT NAME: A LANDING PAGE
 *	= PROJECT DESCRIPTION: A BUSINESS LANDING PAGE
 *	= FILE NAME: CUSTOM.CSS
@@ -10,42 +10,42 @@
 *	= VERSION: 0.0.1
 *	= DEVELOPMENT DATE: 21/12/16
 * 	= COUNTRY: BANGLADESH
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
-:root{
-    --ff:verdana;
-    --width:85vw;
-    --padding-top:5rem;
-    --white:#ffffff;
+:root {
+    --ff: verdana;
+    --width: 85vw;
+    --padding-top: 5rem;
+    --white: #ffffff;
 }
 aside { 
-    background: var(--white); 
+    background: var( --white ); 
 }
 
 @media screen {}
 @media print {}
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: FONTS DECLARATIONS
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @font-face {
-    font-family: 'Bitter' ;
-    src: url('../fonts/Bitter-Regular-webfont.eot');
-    src: url('../fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Bitter-Regular-webfont.woff') format('woff'),
-         url('../fonts/Bitter-Regular-webfont.ttf') format('truetype'),
-         url('../_fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg');
+    font-family: 'Bitter';
+    src: url( '../fonts/Bitter-Regular-webfont.eot' );
+    src: url( '../fonts/Bitter-Regular-webfont.eot?#iefix') format( 'embedded-opentype' ),
+         url( '../fonts/Bitter-Regular-webfont.woff') format( 'woff' ),
+         url( '../fonts/Bitter-Regular-webfont.ttf') format( 'truetype' ),
+         url( '../_fonts/Bitter-Regular-webfont.svg#BitterRegular') format( 'svg' );
     font-weight: normal;
     font-style: normal;
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: FIRST WAY TO RESET CODE
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
 *,
 *::before,
@@ -62,11 +62,93 @@ aside {
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*--------------------------------------------
 *	:: SECOND WAY TO RESET CODE
-*------------------------------------------------------------------------------------------
+*--------------------------------------------
 */
-html, body, div, span, applet, object, iframe, pre, a, abbr, acronym, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, lagend, table, caption, tbody, thead, tfoot, th, tr, td, section, article, aside, header, hgroup, nav, menu, footer, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, mark, span, em, strong, img, ol, ul, li, figure, figcaption, details, embed, canvas, audio, video, output, ruby summary input {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+pre,
+a,
+abbr,
+acronym,
+big,
+cite,
+code,
+del,
+dfn,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+lagend,
+table,
+caption,
+tbody,
+thead,
+tfoot,
+th,
+tr,
+td,
+section,
+article,
+aside,
+header,
+hgroup,
+nav,
+menu,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+time,
+mark,
+span,
+em,
+strong,
+img,
+ol,
+ul,
+li,
+figure,
+figcaption,
+details,
+embed,
+canvas,
+audio,
+video,
+output,
+ruby,
+summary,
+input {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -78,20 +160,36 @@ html, body, div, span, applet, object, iframe, pre, a, abbr, acronym, big, cite,
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: HTML5 DISPLAY RULE
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
-address, article, aside, canvas, details, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, main {
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
   display: block;
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: GLOBAL STYLE
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
-html { background: rgba(65,64,66,.8); }
+html { 
+	background: rgba( 65, 64, 66, .8 ); 
+}
 body { 
 	font: 14px/21px "Cabin", Helvetica, Arial, sans-serif; 
 	color: #6c6c6c; 
@@ -102,27 +200,64 @@ body {
 	-o-font-smoothing: antialiased; 	 /* Opera              */
 	font-smoothing: antialiased; 		 /* Official           */
 }
-h1 { font: 36px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
-h2, h3 { font: 21px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
-h4 { font: 16px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
-h5 { font: 14px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
-h6 { font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
-a:link { color: #e74b34; text-decoration: none; }
-a:hover, a:focus, a:active, a:visited { color: #132c3b; text-decoration: underline; }
-p { margin-bottom: 1em; }
-strong { font-weight: bold; }
-em { font-style: italic; }
-ol, ul { list-style: none;}
-blockquote { border: 0; font: italic 21px/1.5em "Gentium Basic", Georgia, serif; color: #2894d8; }
-blockquote cite { display: block; margin-top: 42px; font-size: 16px; font-style: normal; }
-hr { border: none; height: 1px; background-color: #ededed; margin: 3em 0; }
-input { background: #696969; border: 1px solid #c3c3c3; color: #cbcbcb; padding: 3px; }
-input:focus, input:hover { background: #ededed; color: #4e4e4e; }
+h1 { 
+	font: 36px/1.5em "Cabin", Helvetica, Arial, sans-serif; 
+}
+h2,
+h3 { 
+	font: 21px/1.5em "Cabin", Helvetica, Arial, sans-serif; 
+}
+h4 { 
+	font: 16px/1.5em "Cabin", Helvetica, Arial, sans-serif; 
+}
+h5 { 
+	font: 14px/1.5em "Cabin", Helvetica, Arial, sans-serif; 
+}
+h6 { 
+	font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif; 
+}
+a:link { 
+	color: #e74b34; text-decoration: none; 
+}
+a:hover,
+a:focus, 
+a:active, 
+a:visited { 
+	color: #132c3b; text-decoration: underline;
+}
+p { 
+	margin-bottom: 1em; 
+}
+strong { 
+	font-weight: bold; 
+}
+em { 
+	font-style: italic; 
+}
+ol, ul { 
+	list-style: none;
+}
+blockquote { 
+	border: 0; font: italic 21px/1.5em "Gentium Basic", Georgia, serif; color: #2894d8; 
+}
+blockquote cite { 
+	display: block; margin-top: 42px; font-size: 16px; font-style: normal; 
+}
+hr { 
+	border: none; height: 1px; background-color: #ededed; margin: 3em 0; 
+}
+input { 
+	background: #696969; border: 1px solid #c3c3c3; color: #cbcbcb; padding: 3px; 
+}
+input:focus,
+input:hover { 
+	background: #ededed; color: #4e4e4e; 
+}
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: SOLUTION TO THE CLEARFIX PROBLEM
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
 .clearfix:before,
 .clearfix:after { 
@@ -150,9 +285,9 @@ input:focus, input:hover { background: #ededed; color: #4e4e4e; }
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: THE WAY HOW TO HIDE TEXT
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
 h1.logo a {
 	width: 200px;
@@ -172,57 +307,41 @@ h1.logo a {
 }
 
 /**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: BIG WRAPPER CODE
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
-#bigWrapper { overflow: hidden; margin: 0 auto; position: relative; text-align: left; }
+#bigWrapper { 
+	overflow: hidden; 
+	margin: 0 auto; 
+	position: relative; 
+	text-align: left; 
+}
 
 /**
-*------------------------------------------------------------------------------------------
-*	:: HEADER CODE
-*------------------------------------------------------------------------------------------
-*/
-header { background: red; }
-
-/**
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 *	:: NAVIGATION CODE
-*------------------------------------------------------------------------------------------
+*-------------------------------------------
 */
-nav ul { background: green; }
-nav ul li { background: green; }
-nav ul li a { display: block; width: 30px; heidth: 30px; margin-left: 30px; }
-nav ul li:last-child a { background: green; margin-left: none; }
-nav ul li a:hover { background: yellow; }
-
-/**
-*------------------------------------------------------------------------------------------
-*	:: SECTION CODE
-*------------------------------------------------------------------------------------------
-*/
-section { width: 30em; float: left; background: tomato; }
-
-/**
-*------------------------------------------------------------------------------------------
-*	:: ARTICLE CODE
-*------------------------------------------------------------------------------------------
-*/
-article { background: yellow; }
-
-/**
-*------------------------------------------------------------------------------------------
-*	:: SIDEBAR CODE IF ANY...
-*------------------------------------------------------------------------------------------
-*/
-aside { width: 20em; float: right; background: navy; }
-
-/**
-*------------------------------------------------------------------------------------------
-*	:: FOOTER CODE
-*------------------------------------------------------------------------------------------
-*/
-footer { clear: both; background: black; color: white; }
+nav ul { 
+	background: green; 
+}
+nav ul li { 
+	background: green; 
+}
+nav ul li a { 
+	display: block; 
+	width: 30px; 
+	heidth: 30px; 
+	margin-left: 30px; 
+}
+nav ul li:last-child a { 
+	background: green; 
+	margin-left: none; 
+}
+nav ul li a:hover { 
+	background: yellow; 
+}
 
 /**
 *------------------------------------------------------------------------------------------
@@ -258,7 +377,3 @@ footer { clear: both; background: black; color: white; }
 * = comments style 05
 -----------------------------------------
 */
-
-/*#########################################*/
-/* = comment style 06                  */
-/*########################################*/
