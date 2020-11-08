@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'azad-fonts';
+  src:  url('../fonts/azad-fonts.eot?d5r62p');
+  src:  url('../fonts/azad-fonts.eot?d5r62p#iefix') format('embedded-opentype'),
+    url('../fonts/azad-fonts.ttf?d5r62p') format('truetype'),
+    url('../fonts/azad-fonts.woff?d5r62p') format('woff'),
+    url('../fonts/azad-fonts.svg?d5r62p#azad-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="af-"], [class*=" af-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'azad-fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.af-pencil:before {
+  content: "\e905";
+}
+.af-play:before {
+  content: "\e912";
+}
+.af-connection:before {
+  content: "\e91b";
+}
+.af-phone:before {
+  content: "\e942";
+}
+.af-location2:before {
+  content: "\e948";
+}
+.af-bin:before {
+  content: "\e9ac";
+}
+.af-google-plus:before {
+  content: "\ea8b";
+}
+.af-google-plus2:before {
+  content: "\ea8c";
+}
+.af-google-plus3:before {
+  content: "\ea8d";
+}
+.af-google-drive:before {
+  content: "\ea8f";
+}
+.af-facebook:before {
+  content: "\ea90";
+}
+.af-facebook2:before {
+  content: "\ea91";
+}
+.af-instagram:before {
+  content: "\ea92";
+}
+.af-whatsapp:before {
+  content: "\ea93";
+}
+.af-twitter:before {
+  content: "\ea96";
+}
+.af-rss:before {
+  content: "\ea9b";
+}
+.af-rss2:before {
+  content: "\ea9c";
+}
+.af-youtube:before {
+  content: "\ea9d";
+}
+.af-vimeo:before {
+  content: "\eaa0";
+}
+.af-wordpress:before {
+  content: "\eab4";
+}
+.af-joomla:before {
+  content: "\eab5";
+}
+.af-blogger:before {
+  content: "\eab7";
+}
+.af-blogger2:before {
+  content: "\eab8";
+}
+.af-appleinc:before {
+  content: "\eabe";
+}
+.af-skype:before {
+  content: "\eac5";
+}
+.af-linkedin:before {
+  content: "\eac9";
+}
+.af-linkedin2:before {
+  content: "\eaca";
+}
+.af-stackoverflow:before {
+  content: "\ead0";
+}
+.af-pinterest:before {
+  content: "\ead1";
+}
+.af-pinterest2:before {
+  content: "\ead2";
+}
+.af-html-five:before {
+  content: "\eae4";
+}
+.af-html-five2:before {
+  content: "\eae5";
+}
+.af-css3:before {
+  content: "\eae6";
+}
