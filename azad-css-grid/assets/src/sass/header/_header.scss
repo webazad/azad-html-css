@@ -1,0 +1,47 @@
+/**
+* :: HEADER DESIGN
+*/
+.azad-header{
+    border-top:.001rem solid tomato;
+    background:map_get($colors,bg);
+    padding: 1rem;
+
+    .header-container{
+        display:flex;
+
+        .logo{
+            width:100%;
+            h1{
+                text-align:left;
+                line-height:0;
+                a{
+                    display:inline-block;
+                }
+            }
+        }
+        .azad-nav{
+            width: 100%;
+        }
+        .azad-menus{
+            ul{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                li{
+                    a{
+                        display:block;
+                        font-size:1rem;
+                        color: tomato;
+                        padding:1rem 1rem;
+                        text-transform:uppercase;
+                    
+                        &:hover{
+                            color:lighten(map-get($colors,"footer-bg"),20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

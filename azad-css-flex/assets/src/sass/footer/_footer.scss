@@ -1,0 +1,40 @@
+/**
+* :: STICKY FOOTER BEGINS
+*/
+// body.azad section:nth-last-child(2){
+//     margin-bottom: 570px;
+// }
+/**
+* :: FOOTER DESIGN
+*/
+footer.azad-footer{
+    text-align:center;
+    .footer-top{
+        background:lighten(map-get($colors,"footer-bg"),30%);
+        padding:5rem 0;
+        color:#ffffff;
+        ul{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            li{
+                a{
+                    color:#ffffff;
+                    display:block;
+                    padding:1rem;
+                    line-height:1rem;
+                    font-weight:bold;
+                    font-size:1.3rem;
+                    border:1px solid #ffffff;
+                    border-radius:50%;
+                    margin:5px;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        background:lighten(map-get($colors,"footer-bg"),20%);
+        padding:2rem 0;
+        color:#ffffff;
+    }
+}
